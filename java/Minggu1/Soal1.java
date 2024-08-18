@@ -1,3 +1,5 @@
+package Minggu1;
+
 import java.util.Scanner;
 
 public class Soal1 {
