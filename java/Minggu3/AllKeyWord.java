@@ -38,7 +38,7 @@ public class AllKeyWord {
         }
     }
 
-    public void addToChart() {
+    public void addToChart() throws InterruptedException {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -47,5 +47,7 @@ public class AllKeyWord {
 
         WebElement chartBtn = driver.findElement(By.xpath("//div[contains(@id,'shopping_cart')]//a"));
         chartBtn.click();
+
+        Thread.sleep(5000);
     }
 }
